@@ -9,10 +9,10 @@ namespace Test_Analyticalways
 {
     class Program
     {
-        private static string ServerName = "AndresLacruz-pc";
+        private static string ServerName = "";
         private static string Database = "Test_AnalyticalwaysDB";
-        private static string UserId = "sa";
-        private static string Password = "P@$$w0rd";
+        private static string UserId = "";
+        private static string Password = "";
 
         private static string ConnectionString = "Server=" + ServerName + "; Database=" + Database + "; User Id = " + UserId + "; Password=" + Password + ";";
 
