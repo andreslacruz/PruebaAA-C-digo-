@@ -36,7 +36,7 @@ namespace Test_Analyticalways
                 File.Delete(fileInfo.FullName);
                 Console.WriteLine("Inicio de la Migracion");
                 InsertDataByTSQLBulk();
-                Console.WriteLine("Inicio de la Migracion");
+                Console.WriteLine("Fin de la Migracion");
             }
 
             #region Codigo Comentado solo para fines de demostrar que otras formas menos eficientes se puede ejecutar la migracion masiva
@@ -55,7 +55,8 @@ namespace Test_Analyticalways
             #endregion
 
         }
-
+	    
+	#region Funciones que se probaron pero descartadas por optimizar la migracion
         //Promedio de tiempo de ejecucion 3,303 Minutos
         private static void InsertDaTaByQuery(DataTable dt)
         {
@@ -169,6 +170,7 @@ namespace Test_Analyticalways
             var elapsedMs = watch.ElapsedMilliseconds;
             Console.WriteLine(elapsedMs.ToString());
         }
+	#endregion
 
         //Promedio de tiempo de ejecucion 2,483
         private static void InsertDataByTSQLBulk()
